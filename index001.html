@@ -25,6 +25,7 @@
             transform: translate(-50%, -50%);
             border-radius: 15px;
             padding: 20px;
+
         }
 
         #resultado{
@@ -33,6 +34,19 @@
             height: 60px;
             margin: 5px;
             border-radius: 7px;
+            margin-bottom: 15px;
+        }
+        
+        #sombra{
+            width: 296px;
+            height: 340px;
+            background-color: #99c089;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-70%, -70%);
+            box-shadow: 10px 10px 0px -10px #7a976b;
+            
         }
 
         .bt{
@@ -41,14 +55,16 @@
             border-radius: 7px;
             border: 0;
             margin: 3px;
+            font-weight: bold;
         }
     </style>
     <title>Calculadora</title>
 </head>
 <body>
     <div id="fundo">
+        <div id="sombra"></div>
         <div id="calculadora">
-            <p id="resultado">Resultado</p>
+            <p id="resultado"></p>
             <table>
                 <tr>
                     <th colspan="2"><button class="bt" style="width: 130px;">C</button></th>
@@ -71,6 +87,11 @@
                     <th><button class="bt">1</button></th>
                     <th><button class="bt">2</button></th>
                     <th><button class="bt">3</button></th>
+                    <th><button class="bt">x</button></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><button class="bt" style="width: 130px;">0</button></th>
+                    <th><button class="bt">.</button></th>
                     <th><button class="bt">=</button></th>
                 </tr>
             </table>
