@@ -30,21 +30,23 @@
         box-shadow: 0px 10px #424242;
       }
 
-      .resultado {
+      .tela {
         background-color: #bbd0bf;
-        color: #434742;
+        color: #353535;
         height: 60px;
         padding: 5px;
         margin: 5px;
         border-radius: 7px;
         margin-bottom: 15px;
         font-family: "Press Start 2P", cursive;
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
 
-      p {
-        text-align: right;
-        padding-top: 33px;
+      #Result {
+        height: 60px;
+        display: flex;
+        align-items: last baseline;
+        justify-content: right;
       }
 
       .bt {
@@ -53,33 +55,50 @@
         border-radius: 7px;
         border: 0;
         text-align: center;
+        line-height: 50px;
         margin: 3px;
         color: #353535;
-        /*falta alinhar botoes*/
         font-family: "Fredoka", sans-serif;
-        font-size: 3rem;
+        font-size: 2.6rem;
         box-shadow: inset 0px -3px #b1b1b1;
+        cursor: pointer;
+      }
+
+      /* fazer footer com nome do criador */
+
+      .bt:hover{
+        background-color: rgb(168, 168, 168);
+        box-shadow: inset 0px -3px #5e5e5e;
       }
 
       .bt1 {
         width: 60px;
-        height: 40px;
+        height: 50px;
         border-radius: 7px;
-        color: #fefefe;
+        color: #fff;
         font-family: "Fredoka", sans-serif;
         font-size: 3rem;
+        line-height: 40px;
         border: 0;
+        background-color: rgb(255, 166, 0);
         margin: 3px;
         box-shadow: inset 0px -3px #b6742d;
+        cursor: pointer;
       }
+
+      .bt1:hover{
+        background-color: rgb(228, 148, 0);
+        box-shadow: inset 0px -3px #976026;
+      }
+
     </style>
     <title>Calculadora</title>
   </head>
   <body>
     <div id="fundo">
       <div id="calculadora">
-        <div class="resultado">
-          <p>12245</p>
+        <div class="tela">
+          <p id="Result">12245</p>
         </div>
         <table>
           <tr>
@@ -113,7 +132,7 @@
             </th>
             <th><button class="bt">.</button></th>
             <th>
-              <button class="bt1" style="background-color: rgb(230, 149, 0)">
+              <button class="bt1">
                 =
               </button>
             </th>
