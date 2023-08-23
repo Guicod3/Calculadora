@@ -1,5 +1,4 @@
 function digitar(num){
-    document.getElementById('Result').innerHTML = num;
+    var numero = document.getElementById('Result').innerHTML;
+    document.getElementById('Result').innerHTML = numero + num;
 }
-
-console.log(Result)
