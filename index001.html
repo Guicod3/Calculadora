@@ -11,45 +11,47 @@
     <div id="fundo">
       <div id="calculadora">
         <div class="tela">
-          <p id="Result">12245</p>
+          <p id="Result"></p>
         </div>
         <table>
           <tr>
             <th colspan="2">
-              <button class="bt" style="width: 130px">C</button>
+              <button class="bt" style="width: 130px" onclick="digitar('C')">C</button>
             </th>
-            <th><button class="bt">CE</button></th>
-            <th><button class="bt">/</button></th>
+            <th><button class="bt" onclick="digitar('CE')">CE</button></th>
+            <th><button class="bt" onclick="digitar('/')">/</button></th>
           </tr>
           <tr>
-            <th><button class="bt">7</button></th>
-            <th><button class="bt">8</button></th>
-            <th><button class="bt">9</button></th>
-            <th><button class="bt">-</button></th>
+            <th><button class="bt" onclick="digitar('7')">7</button></th>
+            <th><button class="bt" onclick="digitar('8')">8</button></th>
+            <th><button class="bt" onclick="digitar('9')">9</button></th>
+            <th><button class="bt" onclick="digitar('-')">-</button></th>
           </tr>
           <tr>
-            <th><button class="bt">4</button></th>
-            <th><button class="bt">5</button></th>
-            <th><button class="bt">6</button></th>
-            <th><button class="bt">+</button></th>
+            <th><button class="bt" onclick="digitar('4')">4</button></th>
+            <th><button class="bt" onclick="digitar('5')">5</button></th>
+            <th><button class="bt" onclick="digitar('6')">6</button></th>
+            <th><button class="bt" onclick="digitar('+')">+</button></th>
           </tr>
           <tr>
-            <th><button class="bt">1</button></th>
-            <th><button class="bt">2</button></th>
-            <th><button class="bt">3</button></th>
-            <th><button class="bt">x</button></th>
+            <th><button class="bt" onclick="digitar('1')">1</button></th>
+            <th><button class="bt" onclick="digitar('2')">2</button></th>
+            <th><button class="bt" onclick="digitar('3')">3</button></th>
+            <th><button class="bt" onclick="digitar('x')">x</button></th>
           </tr>
           <tr>
             <th colspan="2">
-              <button class="bt" style="width: 130px">0</button>
+              <button class="bt" style="width: 130px" onclick="digitar('0')">0</button>
             </th>
-            <th><button class="bt">.</button></th>
+            <th><button class="bt" onclick="digitar('.')">.</button></th>
             <th>
-              <button class="bt1">=</button>
+              <button class="bt1" onclick="digitar('=')">=</button>
             </th>
           </tr>
         </table>
       </div>
     </div>
+
+    <script src="funcional.js"></script>
   </body>
 </html>
