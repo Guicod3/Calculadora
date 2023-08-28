@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="indexcss.css" />
+    <link rel="shortcut icon" href="calculator-icon_34473 (1).ico" type="image/x-icon">
     <title>Calculadora</title>
   </head>
   <body>
@@ -37,7 +38,7 @@
             <th><button class="bt" onclick="digitar('1')">1</button></th>
             <th><button class="bt" onclick="digitar('2')">2</button></th>
             <th><button class="bt" onclick="digitar('3')">3</button></th>
-            <th><button class="bt" onclick="digitar('x')">x</button></th>
+            <th><button class="bt" onclick="digitar('*')">x</button></th>
           </tr>
           <tr>
             <th colspan="2">
@@ -45,13 +46,16 @@
             </th>
             <th><button class="bt" onclick="digitar('.')">.</button></th>
             <th>
-              <button class="bt1">=</button>
+              <button class="bt1" onclick="calcular()">=</button>
             </th>
           </tr>
         </table>
       </div>
     </div>
+    <p id="footer">Calculadora criada apenas para estudo por <a href="https://github.com/Guicod3">Guilherme Miranda</a>.</p>
 
     <script src="funcional.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
   </body>
 </html>

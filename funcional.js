@@ -1,3 +1,5 @@
+
+
 function digitar(num){
     var numero = document.getElementById('Result').innerHTML;
     document.getElementById('Result').innerHTML = numero + num;
@@ -21,4 +23,12 @@ function caractere(){
     }
 }
 
+function calcular(){
+    var numero = document.getElementById('Result').innerHTML;
+    if (numero){
+        document.getElementById('Result').innerHTML = eval(numero);
+    } else{
+        swal("Ops!", "Você não inseriu um valor.", "error");
+    }
+}
 
